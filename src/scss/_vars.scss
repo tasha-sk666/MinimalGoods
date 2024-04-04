@@ -1,0 +1,29 @@
+@import "mixins";
+
+:root {
+  --font-family: "Helvetica", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 40px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --section-padding: 60px;
+  --color-grey: #cecece;
+  --color-white: #e8e2da;
+  --color-green: #788d67;
+
+  //page changed color
+  --color-text: #e8e2da;
+  --color-page: #2e2a27;
+
+  // timing
+  --transition: 0.5s cubic-bezier(0.2, 0.6, 0, 1);
+}
+
+  // :root[data-theme="dark"] {
+  //   --color-text: #e8e2da;
+  //   --color-page: #2e2a27;
+  // }
+
+  // :root[data-theme="light"] {
+  //   --color-text: #2e2a27;
+  //   --color-page: #e8e2da;
+  // }
