@@ -42,7 +42,7 @@
       color: var(--color-text);
 
       @include small-tablet {
-        font-size: 8em;
+        font-size: 20vw;
       }
     }
 
@@ -63,6 +63,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: 3.6em;
+
+    @include small-tablet {
+      justify-content: space-between;
+    }
   }
 
   &__images-item {
@@ -100,6 +104,15 @@
         margin-top: -8%;
         margin-right: 25%;
         width: 25%;
+      }
+    }
+
+    @include small-tablet {
+      margin-right: 0 !important;
+      width: 45% !important;
+
+      &:nth-child(odd) {
+        margin-top: 10% !important;
       }
     }
   }

@@ -40,6 +40,10 @@
       font-size: 1em;
       color: var(--color-text);
     }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 }
 
@@ -62,5 +66,9 @@
     @include hover {
       color: var(--color-green);
     }
+  }
+
+  @include small-tablet {
+    display: none;
   }
 }

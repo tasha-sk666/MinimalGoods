@@ -26,10 +26,6 @@ html {
   font-family: var(--font-family, sans-serif);
   font-size: 14px;
   background: var(--color-page);
-
-  @include mobile {
-    font-size: 1vw;
-  }
 }
 
 img {

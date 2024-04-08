@@ -1,7 +1,7 @@
 .hero {
   &__container {
-    padding-top: 8.78em;
-    padding-bottom: 8.78em;
+    padding-top: 8em;
+    padding-bottom: 8em;
     text-align: center;
   }
 
@@ -12,10 +12,14 @@
 
     span {
       font-weight: 700;
-      font-size: 11em;
+      font-size: 10em;
       line-height: 0.8;
       letter-spacing: -0.04em;
       color: var(--color-text);
+
+      @include small-tablet {
+        font-size: 19vw;
+      }
     }
 
     &:last-child {
@@ -31,7 +35,7 @@
 }
 
 .sticky-circle {
-  height: 200vh;
+  height: 300vh;
 
   &__wrap {
     position: sticky;

@@ -47,7 +47,6 @@ const logoAnimation = () => {
         start: "top center-=40%",
         end: "bottom top",
         scrub: 1,
-        // markers: true,
       },
     });
 
@@ -55,7 +54,7 @@ const logoAnimation = () => {
       targetElement,
       {
         width: "100%",
-        y: "-115%",
+        y: "-120%",
       },
       {
         width: "14em",
@@ -77,7 +76,7 @@ const heroTextAnimation = () => {
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: triggerElement,
-          start: "center center",
+          start: "center center-=20%",
           end: "bottom top",
           scrub: 0.8,
         },
